@@ -168,7 +168,7 @@ async function withdraw() {
             functionName: 'withdraw',           // Function to call on the contract
             account: connectedAccount,          // User's wallet address
             chain: currentChain,                // Network chain configuration
-            value: parseEther('0')              // Send 0 ETH
+            // value: parseEther('0')              // Send 0 ETH (default is 0 if omitted)
         })
 
         const hash = await walletClient.writeContract(request)
